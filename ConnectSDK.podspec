@@ -9,7 +9,7 @@
 # cannot include its support in a subspec in an automated way.
 
 Pod::Spec.new do |s|
-  s.name         = "ConnectSDK"
+  s.name         = "ConnectSDK-Custom"
   s.version      = "1.6.0"
   s.summary      = "Connect SDK is an open source framework that connects your mobile apps with multiple TV platforms."
 
@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
   s.social_media_url   = "http://twitter.com/ConnectSDK"
   s.platform     = :ios, "7.1"
   s.ios.deployment_target = "7.1"
-  s.source       = { :git => "https://github.com/ConnectSDK/Connect-SDK-iOS.git",
+  s.source       = { :git => "https://github.com/tranhoanganh/Connect-SDK-iOS-Core.git",
                      :tag => s.version,
                      :submodules => true }
 
