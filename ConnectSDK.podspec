@@ -9,7 +9,7 @@
 # cannot include its support in a subspec in an automated way.
 
 Pod::Spec.new do |s|
-  s.name         = "ConnectSDK"
+  s.name         = "ConnectSDK-custom"
   s.version      = "1.6.1"
   s.summary      = "Connect SDK is an open source framework that connects your mobile apps with multiple TV platforms."
 
@@ -93,7 +93,7 @@ Pod::Spec.new do |s|
     sp.private_header_files = "core/**/*_Private.h"
     sp.requires_arc = true
 
-    sp.dependency 'ConnectSDK/no-arc'
+    sp.dependency 'ConnectSDK-custom/no-arc'
   end
 
   s.subspec 'no-arc' do |sp|
@@ -106,7 +106,7 @@ Pod::Spec.new do |s|
   s.subspec 'GoogleCast' do |sp|
     cast_dir = "modules/google-cast"
 
-    sp.dependency 'ConnectSDK/Core'
+    sp.dependency 'ConnectSDK-custom/Core'
     sp.source_files = "#{cast_dir}/**/*.{h,m}"
     sp.exclude_files = "#{cast_dir}/*Tests/**/*"
     sp.private_header_files = "#{cast_dir}/**/*_Private.h"
