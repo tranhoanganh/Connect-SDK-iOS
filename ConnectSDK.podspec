@@ -9,8 +9,8 @@
 # cannot include its support in a subspec in an automated way.
 
 Pod::Spec.new do |s|
-  s.name         = "ConnectSDK-Custom"
-  s.version      = "1.6.0"
+  s.name         = "ConnectSDK"
+  s.version      = "1.6.1"
   s.summary      = "Connect SDK is an open source framework that connects your mobile apps with multiple TV platforms."
 
   s.description  = <<-DESC
